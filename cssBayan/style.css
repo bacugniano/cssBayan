@@ -9,6 +9,10 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   color: #000;
@@ -35,4 +39,101 @@ h1 {
 p {
   margin: 0;
   padding: 0;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.title {
+  padding: 1.25rem 0;
+  font-size: 4rem;
+}
+
+.mem__label {
+  padding: 1.25rem 0;
+  width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+
+.mem__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2929cd;
+  transition: all .3s ease-in-out;
+}
+
+.mem__icon {
+  display: none;
+  width: 1.5rem; 
+  height: 1.5rem; 
+  background-image: url('img/plus1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .3s ease-in-out;
+}
+
+.mem__img {
+  max-height: 0;
+  transition: all .3s ease-in-out;
+}
+
+.mem__label:hover {
+  cursor: pointer;
+}
+
+.mem__list:hover .mem__icon {
+  display: block;
+}
+
+.mem__list:hover .mem__text {
+  color: #000;
+}
+
+.mem__label:hover .mem__img {
+  max-height: 25rem;  
+  margin-top: 1rem;
+}
+
+.mem__label:hover .mem__icon {
+  transform: rotate(45deg);
+}
+
+.mem__input:checked ~ .mem__img {
+  max-height: 25rem;
+  margin-top: 1rem;
+}
+
+.mem__input:checked ~ .mem__text {
+  color: #000;
+}
+
+.mem__input:checked ~ .mem__text .mem__icon {
+  transform: rotate(45deg);
+}
+
+.mem__label:active .mem__text {
+  color:#2929cd;
+}
+
+.mem__label:active .mem__icon {
+  background-image: url('img/plus2.png');
+}
+
+.mem__label:active .mem__img {
+  opacity: 0.6;
 }
