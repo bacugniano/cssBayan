@@ -137,3 +137,19 @@ p {
 .mem__label:active .mem__img {
   opacity: 0.6;
 }
+
+@media (max-width: 820px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .mem__label {
+    width: 20rem;
+  }
+}
