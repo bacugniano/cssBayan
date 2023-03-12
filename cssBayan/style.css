@@ -74,7 +74,7 @@ p {
   font-size: 2rem;
   font-weight: 700;
   color: #2929cd;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .mem__icon {
@@ -84,12 +84,12 @@ p {
   background-image: url('img/plus1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .mem__img {
   max-height: 0;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .mem__label:hover {
