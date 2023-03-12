@@ -144,12 +144,14 @@ p {
   }
 }
 
+@media (max-width: 420px) {
+  .mem__label {
+    width: 20rem;
+  }
+}
+
 @media (max-width: 320px) {
   html {
     font-size: 10px;
-  }
-
-  .mem__label {
-    width: 20rem;
   }
 }
