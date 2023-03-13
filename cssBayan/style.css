@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 * {
@@ -41,20 +40,13 @@ p {
   padding: 0;
 }
 
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0 !important;
-	border: 0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
-}
-
 .title {
   padding: 1.25rem 0;
   font-size: 4rem;
+}
+
+.mem__input {
+  display: none;
 }
 
 .mem__label {
@@ -140,7 +132,7 @@ p {
 
 @media (max-width: 820px) {
   html {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -152,6 +144,6 @@ p {
 
 @media (max-width: 320px) {
   html {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 }
