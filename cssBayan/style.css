@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  padding: 1.25rem 0;
+  font-size: 4rem;
+}
+
+.mem__input {
+  display: none;
+}
+
+.mem__label {
+  padding: 1.25rem 0;
+  width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+
+.mem__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2929cd;
+  transition: all .5s ease-in-out;
+}
+
+.mem__icon {
+  display: none;
+  width: 1.5rem; 
+  height: 1.5rem; 
+  background-image: url('img/plus1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .5s ease-in-out;
+}
+
+.mem__img {
+  max-height: 0;
+  transition: all .5s ease-in-out;
+}
+
+.mem__label:hover {
+  cursor: pointer;
+}
+
+.mem__list:hover .mem__icon {
+  display: block;
+}
+
+.mem__list:hover .mem__text {
+  color: #000;
+}
+
+.mem__label:hover .mem__img {
+  max-height: 25rem;  
+  margin-top: 1rem;
+}
+
+.mem__label:hover .mem__icon {
+  transform: rotate(45deg);
+}
+
+.mem__input:checked ~ .mem__img {
+  max-height: 25rem;
+  margin-top: 1rem;
+}
+
+.mem__input:checked ~ .mem__text {
+  color: #000;
+}
+
+.mem__input:checked ~ .mem__text .mem__icon {
+  transform: rotate(45deg);
+}
+
+.mem__label:active .mem__text {
+  color:#2929cd;
+}
+
+.mem__label:active .mem__icon {
+  background-image: url('img/plus2.png');
+}
+
+.mem__label:active .mem__img {
+  opacity: 0.6;
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .mem__label {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 0.625rem;
+  }
+}
